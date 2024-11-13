@@ -5,20 +5,20 @@
 class Beamlit < Formula
   desc ""
   homepage "https://www.beamlit.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/beamlit/toolkit/releases/download/0.0.3/beamlit_Darwin_x86_64.tar.gz"
-      sha256 "6ca25b01479536f424a44c653f66780b444f9cde74571c9d37328617a998943b"
+      url "https://github.com/beamlit/toolkit/releases/download/0.0.4/beamlit_Darwin_x86_64.tar.gz"
+      sha256 "b8e5d94662df3f9be2a189efdacd5a4e6345e0f4b919af3d4d46fcfc093d97bd"
 
       def install
         bin.install "beamlit"
       end
     end
     on_arm do
-      url "https://github.com/beamlit/toolkit/releases/download/0.0.3/beamlit_Darwin_arm64.tar.gz"
-      sha256 "3554c11d44044e65b6ac57af0707b3fda971ab806c45ad4bf339c2e726516416"
+      url "https://github.com/beamlit/toolkit/releases/download/0.0.4/beamlit_Darwin_arm64.tar.gz"
+      sha256 "0a0f96b3c24f0ac5defa4308d2aeee5433231cc086fb92eab7e6eb71042641ee"
 
       def install
         bin.install "beamlit"
@@ -29,8 +29,8 @@ class Beamlit < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/beamlit/toolkit/releases/download/0.0.3/beamlit_Linux_x86_64.tar.gz"
-        sha256 "64f730affe161974498540a8e8d51613498ecb37c75a1291bf4071158faf44f7"
+        url "https://github.com/beamlit/toolkit/releases/download/0.0.4/beamlit_Linux_x86_64.tar.gz"
+        sha256 "399589492de8f083f8188da6df19d1ad34fd06e9759878d554f1a782d96e30fc"
 
         def install
           bin.install "beamlit"
@@ -39,8 +39,8 @@ class Beamlit < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/beamlit/toolkit/releases/download/0.0.3/beamlit_Linux_arm64.tar.gz"
-        sha256 "ad96afc246840475e0f8a8165243314e32ef8bdccb3fed927b0c21fae53180ef"
+        url "https://github.com/beamlit/toolkit/releases/download/0.0.4/beamlit_Linux_arm64.tar.gz"
+        sha256 "e7ca05729191aea32963535f27ce7a25edf3f11e0cb68566d236119d1f0a5fdc"
 
         def install
           bin.install "beamlit"
