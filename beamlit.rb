@@ -14,6 +14,7 @@ class Beamlit < Formula
 
       def install
         bin.install "beamlit"
+        bin.install_symlink "beamlit" => "bl"
       end
     end
     on_arm do
@@ -22,6 +23,7 @@ class Beamlit < Formula
 
       def install
         bin.install "beamlit"
+        bin.install_symlink "beamlit" => "bl"
       end
     end
   end
@@ -34,6 +36,7 @@ class Beamlit < Formula
 
         def install
           bin.install "beamlit"
+          bin.install_symlink "beamlit" => "bl"
         end
       end
     end
@@ -44,6 +47,7 @@ class Beamlit < Formula
 
         def install
           bin.install "beamlit"
+          bin.install_symlink "beamlit" => "bl"
         end
       end
     end
