@@ -9,8 +9,8 @@ class Beamlit < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/beamlit/toolkit/releases/download/v0.0.21/beamlit_Darwin_x86_64.tar.gz"
-      sha256 "77925861181cb60d719298ca90fb5db0a291fd478b2ff5e86d5d860607e9b1dd"
+      url "https://github.com/beamlit/toolkit/releases/download/0.0.21/beamlit_Darwin_x86_64.tar.gz"
+      sha256 "6f3d00894a9c5586ad5570eea8f76971bd653e6dc290fe0677c5d693d844a118"
 
       def install
         bin.install "beamlit"
@@ -18,8 +18,8 @@ class Beamlit < Formula
       end
     end
     on_arm do
-      url "https://github.com/beamlit/toolkit/releases/download/v0.0.21/beamlit_Darwin_arm64.tar.gz"
-      sha256 "f7351ac55554282344ccf2137eab158072d5f2c7b1f020ef1ad05e039ee817a1"
+      url "https://github.com/beamlit/toolkit/releases/download/0.0.21/beamlit_Darwin_arm64.tar.gz"
+      sha256 "140588cf0cd8ebff1f2750e409ebed946256e71d201cb862bb3f3da2b9a08de7"
 
       def install
         bin.install "beamlit"
@@ -31,8 +31,8 @@ class Beamlit < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/beamlit/toolkit/releases/download/v0.0.21/beamlit_Linux_x86_64.tar.gz"
-        sha256 "88ed5132d9c6b8daf7e26025a8def00751c5d10bcdcf646f9dbf60102e815a8a"
+        url "https://github.com/beamlit/toolkit/releases/download/0.0.21/beamlit_Linux_x86_64.tar.gz"
+        sha256 "e28d72921038f06ab32ec81efd69a9c346362d5ab4b26afc54ca88a33685bd8c"
 
         def install
           bin.install "beamlit"
@@ -42,8 +42,8 @@ class Beamlit < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/beamlit/toolkit/releases/download/v0.0.21/beamlit_Linux_arm64.tar.gz"
-        sha256 "af8e0e67ba1a1562b3921794b497e18e0e8ddec906833693934e84c5c38592db"
+        url "https://github.com/beamlit/toolkit/releases/download/0.0.21/beamlit_Linux_arm64.tar.gz"
+        sha256 "d40471ff40b80638602e33a24e2eeb87d429006d86c76b125cfd94b049ee71ba"
 
         def install
           bin.install "beamlit"
