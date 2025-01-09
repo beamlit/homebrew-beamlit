@@ -5,12 +5,12 @@
 class Beamlit < Formula
   desc ""
   homepage "https://www.beamlit.com"
-  version "0.0.30-a"
+  version "0.0.30"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/beamlit/toolkit/releases/download/v0.0.30-a/beamlit_Darwin_x86_64.tar.gz"
-      sha256 "cc2bb531f627f0545eb52cc40d2ed7aa684831cc3211f020c41304d2e6b6f683"
+      url "https://github.com/beamlit/toolkit/releases/download/v0.0.30/beamlit_Darwin_x86_64.tar.gz"
+      sha256 "1e7d05ff0c2b7ac8b11dcc0cff50ed00538a06be4a3f5a0e08c7b18904d0bfec"
 
       def install
         bin.install "beamlit"
@@ -18,8 +18,8 @@ class Beamlit < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/beamlit/toolkit/releases/download/v0.0.30-a/beamlit_Darwin_arm64.tar.gz"
-      sha256 "76027a4101b0839491c639b3c1efd4db067ed08de583b9e10798170d01ef5c47"
+      url "https://github.com/beamlit/toolkit/releases/download/v0.0.30/beamlit_Darwin_arm64.tar.gz"
+      sha256 "6d46214d529ff818ef90592a49e015cdee700c6eabc21517881150ea9a81e6c3"
 
       def install
         bin.install "beamlit"
@@ -31,8 +31,8 @@ class Beamlit < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/beamlit/toolkit/releases/download/v0.0.30-a/beamlit_Linux_x86_64.tar.gz"
-        sha256 "134f06e3a5f11d40cf76e4df7c096937725c8e5c5716867b31d46ad77fd59b19"
+        url "https://github.com/beamlit/toolkit/releases/download/v0.0.30/beamlit_Linux_x86_64.tar.gz"
+        sha256 "9abe6af4a8d92bc6238e8ffe56224ed77b7c398770276ef00ed30a9d7aa5cf56"
 
         def install
           bin.install "beamlit"
@@ -42,8 +42,8 @@ class Beamlit < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/beamlit/toolkit/releases/download/v0.0.30-a/beamlit_Linux_arm64.tar.gz"
-        sha256 "0a49f7da401b333d83657ffa12cc7be22b5395f6f88a5dd9383dadd5e82d5100"
+        url "https://github.com/beamlit/toolkit/releases/download/v0.0.30/beamlit_Linux_arm64.tar.gz"
+        sha256 "b1a480a9657b179e0e7e3508ff3538241573af43ad7838bad21050f5ee477355"
 
         def install
           bin.install "beamlit"
